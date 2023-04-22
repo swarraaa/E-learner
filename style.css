@@ -1,0 +1,153 @@
+.navbarOwn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem 1rem 2rem;
+  /* background-image: linear-gradient(to bottom, #ace7ff, #dff6ff); */
+  background-color: #06283d;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url('https://cdn.undiksha.ac.id/wp-content/uploads/sites/27/2023/03/06141543/elearning.jpg');
+  /* Set a specific height */
+  min-height: 100vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.idfsnd {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 30rem;
+  color: white;
+}
+.headcont {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 3rem;
+  height: auto;
+  padding: 10rem;
+}
+
+.rightContainer {
+  display: flex;
+  align-items: center;
+}
+
+.rightContainer img {
+  height: 2rem;
+  padding-right: 1rem;
+}
+
+select {
+  border: non;
+}
+.videoHeading {
+  text-align: center;
+  margin-top: 3rem;
+}
+.videosMain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 4rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+.videoCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 1rem;
+  align-items: center;
+  background: #47b5ff;
+  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+  width: 500px;
+  margin-right: 3rem;
+  overflow: hidden;
+  padding: 3rem 1rem;
+  column-gap: 3rem;
+  border-radius: 2rem;
+}
+.videoCard div {
+  margin-left: 1.5rem;
+}
+.moreVideos {
+  text-align: center;
+}
+.moreVideos button {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #04ff00;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.moreVideos button:hover {
+  background-color: #237fff;
+  box-shadow: 0px 15px 20px rgba(46, 189, 229, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.moreVideos button:active {
+  transform: translateY(-1px);
+}
+
+.playlist a {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #06283d;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 17px;
+  padding: 16px;
+  width: 10rem;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.playlist a span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.playlist a span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -15px;
+  transition: 0.5s;
+}
+
+.playlist a:hover span {
+  padding-right: 15px;
+}
+
+.playlist a:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.video {
+  margin-bottom: 10rem;
+}
