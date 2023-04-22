@@ -33,6 +33,7 @@
   border-radius: 3rem;
   height: auto;
   padding: 10rem;
+  text-align: center;
 }
 
 .rightContainer {
@@ -50,7 +51,7 @@ select {
 }
 .videoHeading {
   text-align: center;
-  margin-top: 3rem;
+  padding-top: 3rem;
 }
 .videosMain {
   display: flex;
@@ -66,8 +67,8 @@ select {
   justify-content: center;
   row-gap: 1rem;
   align-items: center;
-  background: #47b5ff;
-  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+  background: #dff6ff;
+  box-shadow: 10px 10px 20px #bebebe;
   width: 500px;
   margin-right: 3rem;
   overflow: hidden;
@@ -149,5 +150,31 @@ select {
 }
 
 .video {
-  margin-bottom: 10rem;
+  padding-bottom: 5rem;
+  background-color: #47b5ff;
+}
+
+.footer-container {
+  background-color: #dff6ff;
+  color: white;
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 908px) {
+  .headcont {
+    padding: 7rem 3rem;
+  }
+}
+
+@media only screen and (max-width: 594px) {
+  .headcont {
+    padding: 5rem 0.7rem;
+    margin: auto 1rem;
+  }
+  .videoCard {
+    box-shadow: none;
+    width: 480px;
+    margin: auto 1rem;
+    padding: 3rem 0.5rem;
+  }
 }
