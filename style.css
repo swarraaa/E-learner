@@ -153,7 +153,24 @@ select {
   padding-bottom: 5rem;
   background-color: #47b5ff;
 }
-
+.articlesMain {
+  background-color: #06283d;
+  color: white;
+}
+.acc {
+  width: 50%;
+}
+.documentation {
+  display: flex;
+  justify-content: center;
+  /* align-items: cenetr; */
+  padding-bottom: 5rem;
+}
+.doc {
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
 .footer-container {
   background-color: #dff6ff;
   color: white;
@@ -176,5 +193,8 @@ select {
     width: 480px;
     margin: auto 1rem;
     padding: 3rem 0.5rem;
+  }
+  .acc {
+    width: 80%;
   }
 }
