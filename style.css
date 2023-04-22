@@ -68,13 +68,17 @@ select {
   row-gap: 1rem;
   align-items: center;
   background: #dff6ff;
-  box-shadow: 10px 10px 20px #bebebe;
+  box-shadow: 10px 10px 10px #6f6e6e;
   width: 500px;
   margin-right: 3rem;
   overflow: hidden;
   padding: 3rem 1rem;
   column-gap: 3rem;
   border-radius: 2rem;
+}
+.videoCard:hover {
+  transform: translate(-7px, -15px);
+  transition: all 0.5s;
 }
 .videoCard div {
   margin-left: 1.5rem;
@@ -151,14 +155,15 @@ select {
 
 .video {
   padding-bottom: 5rem;
-  background-color: #47b5ff;
+  /* background-color: #06283d; */
+  background-image: linear-gradient(to bottom, #06283d, #0e5581);
 }
 .articlesMain {
-  background-color: #06283d;
+  background-image: linear-gradient(to top, #06283d, #0e5581);
   color: white;
 }
 .acc {
-  width: 50%;
+  width: 60%;
 }
 .documentation {
   display: flex;
@@ -196,5 +201,211 @@ select {
   }
   .acc {
     width: 80%;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  background-color: #0e5581;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 4rem;
+  justify-content: space-around;
+  padding: 4rem 0;
+}
+
+.logo-icon-container {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+  column-gap: 2rem;
+}
+
+.smedia-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.wlug-logo img {
+  width: 10rem;
+  height: auto;
+}
+
+.media-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+}
+
+.stay_tuned {
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-weight: 800;
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+}
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.navli {
+  display: flex;
+  flex-direction: row;
+  gap: 4em;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 1.45rem;
+}
+
+.navli a,
+.policies div a {
+  text-decoration: none;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.navli a:hover,
+.policies a:hover,
+.ics a:hover {
+  color: #03d9ff;
+  text-decoration: none;
+}
+
+.ics {
+  display: flex;
+  flex-direction: row;
+  gap: 0.8em;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+}
+
+.policies,
+.policies div {
+  display: flex;
+}
+
+svg {
+  color: whitesmoke;
+}
+.letsLearn:hover,
+.doc:hover {
+  transform: scale(1.1);
+  transition: all 0.2s;
+}
+
+svg:hover {
+  color: #03d9ff;
+
+  transform: scale(1.2);
+  transition: all 0.2s;
+}
+
+@media only screen and (max-width: 1700px) {
+  .logo-icon-container {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .logo-icon-container {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1270px) {
+  .logo-icon-container {
+    width: 55%;
+  }
+  .footer {
+    column-gap: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1236px) {
+  .logo-icon-container {
+    width: 100%;
+    justify-content: center;
+    column-gap: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+  .navli {
+    font-size: 1.2rem;
+  }
+  .wlug-logo {
+    width: 14rem;
+  }
+  .stay_tuned {
+    font-size: 1.4rem;
+  }
+  .copryright p {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .footer {
+    justify-content: space-between;
+    padding: 4rem 3rem;
+  }
+  .logo-icon-container {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .wlug-logo {
+    display: none;
+  }
+  .navigation {
+    align-items: flex-end;
+    width: 100%;
+  }
+  .navli {
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+    gap: 1.5em;
+  }
+  .policies {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .footer {
+    padding: 4rem 2rem;
+  }
+  .navli {
+    font-size: 1.05rem;
+    justify-content: center;
+  }
+  .navigation {
+    align-items: center;
+  }
+  .stay_tuned {
+    font-size: 1.3rem;
+  }
+  .policies {
+    font-size: 0.95rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .navli {
+    gap: 1em;
   }
 }
