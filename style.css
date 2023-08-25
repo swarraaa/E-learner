@@ -68,7 +68,7 @@ select {
   row-gap: 1rem;
   align-items: center;
   background: #dff6ff;
-  box-shadow: 10px 10px 10px #6f6e6e;
+  box-shadow: 5px 5px 0px #000000;
   width: 500px;
   margin-right: 3rem;
   overflow: hidden;
@@ -79,6 +79,7 @@ select {
 .videoCard:hover {
   transform: translate(-7px, -15px);
   transition: all 0.5s;
+  box-shadow: 10px 10px 0px #000000;
 }
 .videoCard div {
   margin-left: 1.5rem;
